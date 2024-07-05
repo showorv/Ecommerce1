@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+section{
+    padding: 100px 100px;
+}
+
+header{
+    font-size: 20px;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background: rgb(211, 208, 208);
+
+   
+}
+
+.navbar .navbar-nav .nav-link{
+    padding: 0px 20px;
+    color: black;
+    transition: 0.2s ease;
+}
+
+.navbar .bg  {
+    max-width: 5%;
+    
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active{
+    color: coral;
+}
+
+
+.navbar i{
+    font-size: 25px;
+    padding: 0 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar i:hover{
+    color: coral;
+}
+
+.navbar .navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+#bar{
+    font-size: 25px;
+    padding: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    color: black;
+    transition: 0.3s ease;
+}
+
+#bar:hover,
+#bar.active{
+    color: white;
+    background: coral;
+    border-radius: 8px;
+}
+
+@media(max-width:991px){
+    #navbarSupportedContent > ul {
+        margin: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        
+    }
+
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        padding: 7px;
+    }
+}
+#home{
+    background: url(images/bg2.jpg);
+    background-size: cover ;
+    background-position:top center ;
+    max-width: 100%;
+    height: 100vh;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home span{
+    color: coral;
+}
+
+.home-container{
+   margin-left: 90px;
+}
+.btn{
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn:hover{
+    background-color: #5c5b5b;
+}
+
+#brand h3{
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    background: black;
+   margin-top: -90px;
+    align-items: center;
+    color: white;
+    
+}
+
+.brand-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+    gap: 1rem;
+    align-items: center;
+    
+}
+
+.brand-section img{
+    width: 100px;    
+    margin-left: 140px;
+}
+
+#new .row .one{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+width: 33%;
+align-items: center;
+margin-top: -110px;
+
+}
+
+#new .row .one img{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+    
+}
+#new  .one .detials{
+    position: absolute;
+    width: 100%;
+margin-left: 50PX;
+    
+}
+
+#new  .one .detials h2{
+   color: #000000;
+}
+#new  .one:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s ease;
+}
+
+#new  .one .detials .but{
+    border: none;
+    display: inline-block;
+    color: black;
+    background: none;
+    border-bottom: 1px solid black;
+    padding: 2.5px;
+    text-transform: uppercase;
+    transform: translateY(50px);
+    transition: 0.3s ease;
+}
+#new  .one .detials .but:hover{
+    background: #000;
+    color: white;
+}
+
+#new  .one:nth-child(3) .detials {
+    margin: 150px
+}
+
+
+#product .p-section{
+    text-align: center;
+    margin-top: 3px;
+    padding: 5px;
+
+}
+
+#product .p-section h3{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+#product .p-section hr{
+    width: 40px;
+    border: 2px solid red;
+    margin-left: 900px;
+}
+
+#product .p-section p{
+    font-size: 20px;
+    font-weight: 400;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    gap: 1rem;
+    margin-top: 20px;
+    border: none;
+  
+}
+
+.card .boxt {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 40px rgb(0, 0, 0,0.1);
+    cursor: pointer;
+}
+
+.card .boxt  img{
+  
+    width: 80%;
+    height: 250px;
+    transition: 0.3s all;
+    
+}
+
+.card .boxt:hover  img{
+    opacity: 0.7;
+   
+}
+
+.card .boxt .stars{
+    padding: 20px 0px;
+    text-align: center;
+}
+.card .boxt .stars i{
+    font-size: 16px;
+    color: rgb(240, 164, 24);
+}
+
+
+.card .boxt  h3{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.card .boxt  h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+.card .boxt  .p-but{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 3px 2px;
+    border-radius: 4px;
+    width: 90px;
+    background: coral;
+    font-size: 18px;
+    margin-left: 130px;
+    opacity: 0;
+    transition: 0.3s all;
+    transform: translateY(20px);
+    cursor: pointer;
+}
+
+.card .boxt:hover .p-but{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+#banner{
+    background: url(images/bg3.jpg);
+    background-size: cover ;
+    background-position:top 400px center ;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 60vh;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.banner-box{
+    text-align: center;
+    margin: auto;
+}
+
+.banner-box h4{
+    font-size: 20px;
+
+}
+.banner-box h1{
+    color: rgb(54, 52, 52);
+}
+.banner-box button{
+    background-color: coral;
+}
+.card2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    gap: 1rem;
+    margin-top: 20px;
+    border: none;
+  
+}
+
+.card2 .boxt {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 40px rgb(0, 0, 0,0.1);
+    cursor: pointer;
+}
+
+.card2 .boxt  img{
+  
+    width: 80%;
+    height: 400px;
+    transition: 0.3s all;
+    
+}
+.card2 .boxt:hover  img{
+    opacity: 0.7;
+   
+}
+
+.card2 .boxt .stars{
+    padding: 20px 0px;
+    text-align: center;
+}
+.card2 .boxt .stars i{
+    font-size: 16px;
+    color: rgb(240, 164, 24);
+}
+
+
+.card2 .boxt  h3{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.card2 .boxt  h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+.card2 .boxt  .p-but{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 3px 2px;
+    border-radius: 4px;
+    width: 90px;
+    background: coral;
+    font-size: 18px;
+    margin-left: 130px;
+opacity: 0;
+    transition: 0.3s all;
+    transform: translateY(20px);
+    cursor: pointer;
+}
+
+.card2 .boxt:hover .p-but{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fot{
+    background: rgb(29, 28, 28);
+    padding: 20px 0px;
+    height:auto
+}
+
+.footer-section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 20px 100px;
+   
+    gap: 4rem;
+    width: 100%;
+    
+}
+
+.f-one img{
+width: 15%;
+}
+.f-one p{
+    padding: 20px 0px;
+    font-size: 16px;
+    color: rgb(212, 212, 212);
+}
+
+.f-t{
+    text-align: center;
+}
+.f-t h4{
+    font-size: 20px;
+    color: rgb(212, 212, 212);
+}
+.f-t ul{
+    list-style: none;
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+
+.f-t ul li {
+    padding-top: 5px;
+    color: rgb(17, 16, 16);
+}
+.f-t ul li a {
+  
+    color: rgb(145, 142, 142);
+    font-weight: 400;
+}
+.f-three h3 a{
+    color: rgb(212, 212, 212);
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+    
+}
+.f-three .boxim{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-right: 20px;
+
+    
+   
+   
+}
+
+.f-three .boxim img{
+    width: 15%;
+    height: 100px;
+    padding: 4px 5px;
+}
+
+.f-two div{
+    padding-top: 10px;
+    color: rgb(219, 216, 216);
+}
+.f-two h5{
+    color: rgb(219, 216, 216);
+}
+.f-two div h6{
+    color: rgb(161, 161, 161);
+    
+    
+}
+
+.copy{
+    display: flex;
+    flex-direction: row;
+   
+   align-items: center;
+   gap: 20rem;
+
+}
+
+ .copy1 img{
+    width: 50%;
+    padding: 30px 90px;
+    margin-top: -50px;
+}
+.copy1 a i{
+    font-size: 26px;
+    padding: 0px 8px;
+    color: white;
+    
+    
+}
+.copy1 a i:hover{
+    color: rgb(46, 45, 45);
+}
+
+.copy1 p{
+    font-size: 17px;
+    text-align: center;
+    color: rgb(219, 216, 216);
+}
